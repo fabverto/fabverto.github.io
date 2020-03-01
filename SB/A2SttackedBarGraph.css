@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+@import url('https://fonts.googleapis.com/css?family=Sarabun:300,300i,400,700');
+
+
+svg {
+    font: 16px sans-serif;
+    shape-rendering: crispEdges;
+}
+
+h1{
+    font-family: "Major Mono Display", sans-serif;
+    font-size: 3em;
+    font-weight: bolder;
+    color: #1b1b1b;
+    letter-spacing: -5px;
+    text-transform: lowercase;
+}
+
+h2{
+    font-family: "Major Mono Display", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #1b1b1b;
+    letter-spacing: -4px;
+    text-transform: lowercase;
+}
+
+h3{
+    font-family: "Major Mono Display", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #1b1b1b;
+    letter-spacing: -4px;
+    text-transform: lowercase;
+}
+
+.tick line {
+    stroke: #979797;
+}
