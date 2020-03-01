@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic";
+}
+
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -44,13 +51,13 @@ input[type=submit]:hover {
 ul{
     float: right;
     list-style-type: none;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-right: 80px;
 }
 
 ul li{
     /*display: inline-block;*/
-    margin-right: 100px;
+    margin-right: 50px;
     font-size: 30px;
     font-weight: bold;
 }
@@ -61,7 +68,7 @@ ul li a{
 }
 
 ul li a.active{
-    border-bottom: 7px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
     color: #ffffff;
 }
 
