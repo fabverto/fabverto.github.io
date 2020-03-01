@@ -24,7 +24,7 @@
 
 <body>
 <div align="center" class="container">
-    <form action="action_page.php" method="post">
+    <form action="action_page.php" method="post" onsubmit="return validate();">
 
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name...">
@@ -61,6 +61,27 @@
         <input type="submit" value="Submit">
 
     </form>
+    <script type="text/javascript">
+        function validate() {
+            var firstName = document.getElementById('fname').value;
+            var lastName = document.getElementById('lname').value;
+            var emailAddress = document.getElementById('email').value;
+            var country1 = document.getElementById('country').value;
+
+            if(firstName=='' || lastName=='' || emailAddress =='')
+            {
+                alert("This is  required field");
+                return false;
+            }
+
+            if (firstName.length > 30 || lastName.length > 30 || emailAddress.length > 60)
+            {
+                alert("Too long");
+            }
+
+            else return true;
+        }
+    </script>
 </div>
 </header>
 </body>

@@ -14,6 +14,10 @@ $mailTo = "fabio.fahme@ucalgary.ca"
 $headers = "From: ".emailFrom;
 $txt = "You have received an email from ".namef." ".namel."./n/n".message;
 
-mail($mailTo, $headers, $txt, $headers);
+mail($mailTo, "MyWebsiteMessage", $txt, $headers);
+echo "<script type ='text/javascript'>alert('Your message was sent succesfully, Thanks!')</script>";
+window.history.log(-1);
 //header("Location: index.html?mailsend");
 }
+
+?>
