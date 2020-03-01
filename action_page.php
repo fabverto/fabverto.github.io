@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST['submit'])
+if(isset($_POST['submit']){
 
 $namef = $_POST['firstname'];
 $namel = $_POST['lastname'];
@@ -15,8 +15,5 @@ $headers = "From: ".emailFrom;
 $txt = "You have received an email from ".namef." ".namel."./n/n".message;
 
 mail($mailTo, $headers, $txt, $headers);
-header("Location: index.html?mailsend");
-
-
-
->
+//header("Location: index.html?mailsend");
+}
