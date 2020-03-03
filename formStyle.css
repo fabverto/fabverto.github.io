@@ -55,9 +55,14 @@ ul{
     margin-right: 80px;
 }
 
+li{
+    margin: 20px 0;
+}
+
 ul li{
     /*display: inline-block;*/
-    margin-right: 50px;
+    margin-right: -10px;
+    margin-top: -15px;
     font-size: 30px;
     font-weight: bold;
 }
