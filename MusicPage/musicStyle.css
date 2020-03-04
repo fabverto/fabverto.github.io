@@ -26,6 +26,7 @@ ul li{
     margin-top: -15px;
     font-size: 30px;
     font-weight: bold;
+    padding: 0.5px;
 }
 
 ul li a{
@@ -137,6 +138,7 @@ ul li a.one:hover{
  */
  .musicColumn1 ul{
      position: absolute;
+     top: 7%;
      left: 18%;
     float: right;
     list-style-type: none;
