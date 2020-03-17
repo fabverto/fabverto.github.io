@@ -46,7 +46,7 @@ ul li a.active{
     color: white;
 }
 
-ul li a.one:hover{
+ul li a.inactive:hover{
     background-color: white;
     color: black;
 }
@@ -59,7 +59,7 @@ ul li a.one:hover{
     left: 30%;
 }
 
-.intro h2{
+.intro h2 a{
     position: absolute;
     top: 2%;
     left: 3%;
@@ -68,6 +68,7 @@ ul li a.one:hover{
     font-size: 50px;
     font-weight: 400;
     letter-spacing: -1px;
+    text-decoration: none;
 }
 
 .title h1{
