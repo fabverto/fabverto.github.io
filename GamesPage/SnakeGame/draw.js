@@ -26,7 +26,7 @@ window.addEventListener('keydown', ((evt) => {
 
 window.addEventListener('keyup', ((evt) => {
     const direction = evt.key.replace('Arrow', '');
-    speed = 2000;
+    speed = 200;
     clearInterval(t);
     interval();
     console.log(speed);

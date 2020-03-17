@@ -9,31 +9,6 @@ header{
     height: 100vh;
 }
 
-canvas{
-    position: absolute;
-    top: 30%;
-    left: 40%;
-}
-
-.intro h2 a{
-    position: absolute;
-    top: 2%;
-    left: 3%;
-    font-family: "Bauhaus 93";
-    color: #4afa00;
-    font-size: 50px;
-    font-weight: 400;
-    letter-spacing: -1px;
-    text-decoration: none;
-}
-
-.title {
-    position: absolute;
-    top: 20%;
-    left: 44%;
-    font-size: 40px;
-}
-
 ul{
     float: right;
     list-style-type: none;
@@ -64,14 +39,38 @@ ul li a.active{
     color: white;
 }
 
-ul li a.one:hover{
+ul li a.inactive:hover{
     background-color: white;
     color: black;
 }
 
-.score{
-    color: white;
+.title{
     position: absolute;
-    top: 73%;
-    left: 40%;
+    top: 20%;
+    left: 30%;
+}
+
+.intro h2 a {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    font-family: "Bauhaus 93";
+    color: #4afa00;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+.title h1{
+    color: black;
+    font-size: 100px;
+    font-weight: 400;
+    letter-spacing: -8px;
+}
+
+.image{
+    position: absolute;
+    top: 45%;
+    left: 30%;
 }
