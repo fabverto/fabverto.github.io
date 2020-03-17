@@ -67,3 +67,10 @@ ul li a.one:hover{
     background-color: white;
     color: black;
 }
+
+.score{
+    color: white;
+    position: absolute;
+    top: 73%;
+    left: 40%;
+}
