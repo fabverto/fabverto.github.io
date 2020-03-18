@@ -36,7 +36,7 @@
         <img src="MusicPoster/MyWayP.jpg"/>
     </div>
     <div id="player">
-        <div id="songTitle">Demo</div>
+        <div id="songTitle">Future & Deep House Playlist</div>
         <div id="buttons">
             <button id="pre" onclick="pre()"><img src="UIImages/Pre.png" height="90%" width="90%"/></button>
             <button id="play" onclick="playOrPauseSong()"><img src="UIImages/Play.png"/></button>
@@ -54,6 +54,7 @@
 </body>
 <script type="text/javascript">
 
+    let flag = true;
     var currentTime = document.getElementById("currentTime");
     var songs = ["musicFiles/Pascal Junior - My Way.mp3","musicFiles/Pascal Junior - Feelings.mp3","musicFiles/Pascal Junior - No Lies.mp3",
                 "musicFiles/Pascal Junior - Slow Down.mp3", "musicFiles/Pascal Junior - Holdin On.mp3"];
@@ -66,7 +67,8 @@
     var song = new Audio();
     var currentSong = 0;    // it point to the current song
 
-    window.onload = playSong;   // it will call the function playSong when window is load
+    //window.onload = playSong;   // it will call the function playSong when window is load
+    //document.getElementById("play").onclick = playOrPauseSong();
 
     function playSong(){
 
@@ -78,15 +80,23 @@
     }
 
     function playOrPauseSong(){
+        if(flag){
+            $("#play img").attr("src", "UIImages/Pause.png");
+            playSong();
+            flag = false;
+        }
 
-        if(song.paused){
-            song.play();
-            $("#play img").attr("src","UIImages/Pause.png");
+        else {
+
+            if (song.paused) {
+                song.play();
+                $("#play img").attr("src", "UIImages/Pause.png");
+            } else {
+                song.pause();
+                $("#play img").attr("src", "UIImages/Play.png");
+            }
         }
-        else{
-            song.pause();
-            $("#play img").attr("src","UIImages/Play.png");
-        }
+
     }
 
     song.addEventListener('timeupdate',function(){
