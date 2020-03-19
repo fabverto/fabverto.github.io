@@ -71,7 +71,8 @@ ul li a.one:hover{
 
 .score{
     color: white;
-    position: absolute;
-    top: 73%;
+    position: fixed;
+    top: 80%;
     left: 40%;
+    font-size: 20px;
 }
