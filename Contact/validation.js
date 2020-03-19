@@ -1,14 +1,5 @@
 // Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "AIzaSyCvPBeCTXeZWc_Kh9bI_zAuHu4LULEfxSw",
-    authDomain: "mywebform-55f67.firebaseapp.com",
-    databaseURL: "https://mywebform-55f67.firebaseio.com",
-    projectId: "mywebform-55f67",
-    storageBucket: "mywebform-55f67.appspot.com",
-    messagingSenderId: "373665261791",
-    appId: "1:373665261791:web:bbee3312c3013f6730e16a",
-    measurementId: "G-C1DW3GPZ0V"
-};
+
 
 firebaseConfig.ini
 // Initialize Firebase
@@ -31,7 +22,7 @@ function submitForm(m){
 
     saveMessage(firstName, lastName, EmailAddress, Country, Message);
 
-    document.querySelector('alert').style.display = 'block';
+    document.querySelector('alert').style.display = 'none';
 
     setTimeout(function () {
         document.querySelector('alert').style.display = 'none';
@@ -39,6 +30,7 @@ function submitForm(m){
 }
 
 function getInputVal(id) {
+
     return document.getElementById("id").value;
 }
 
