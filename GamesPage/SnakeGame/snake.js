@@ -75,6 +75,16 @@ function Snake() {
     return false;
   }
 
+  this.eatS = function(fruit) {
+    if (this.x === fruit.x &&
+        this.y === fruit.y) {
+      this.total += 3;
+      return true;
+    }
+
+    return false;
+  }
+
   this.checkCollision = function() {
     for (let i=0; i<this.tail.length; i++) {
       if (this.x === this.tail[i].x &&

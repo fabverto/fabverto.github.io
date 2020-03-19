@@ -1,4 +1,4 @@
-function Fruit() {
+function SuperFruit() {
     this.x;
     this.y;
 
@@ -10,8 +10,7 @@ function Fruit() {
     }
 
     this.draw = function() {
-        ctx.fillStyle = "#ff0300";
+        ctx.fillStyle = "#ffff00";
         ctx.fillRect(this.x, this.y, scale, scale)
     }
 }
-

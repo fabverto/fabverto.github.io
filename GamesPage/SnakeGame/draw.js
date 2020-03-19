@@ -5,11 +5,14 @@ const rows = canvas.height / scale;
 const columns = canvas.width / scale;
 var snake;
 var fruit;
+var superF;
 let speed = 200;
 
 (function setup() {
     snake = new Snake();
     fruit = new Fruit();
+    superF = new SuperFruit();
+    superF.pickLocation();
     fruit.pickLocation();
 
     interval();
@@ -36,13 +39,18 @@ function interval() {
    t = window.setInterval(() => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+        superF.draw();
         fruit.draw();
-        snake.update();
-        snake.draw();
+       snake.update();
+       snake.draw();
 
         if (snake.eat(fruit)) {
             fruit.pickLocation();
         }
+
+       if (snake.eatS(superF)) {
+           superF.pickLocation();
+       }
 
         snake.checkCollision();
         document.querySelector('.score')
@@ -55,6 +63,8 @@ function interval1() {
         window.setTimeout(() => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+
+        superF.draw();
         fruit.draw();
         snake.update();
         snake.draw();
@@ -62,6 +72,10 @@ function interval1() {
         if (snake.eat(fruit)) {
             fruit.pickLocation();
         }
+
+            if (snake.eatS(superF)) {
+                superF.pickLocation();
+            }
 
         snake.checkCollision();
         document.querySelector('.score')
