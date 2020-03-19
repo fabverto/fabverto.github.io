@@ -27,67 +27,59 @@
 
 <body>
 <div align="center" class="container">
-    <form action="action_page.php" method="post" onsubmit="return validate();">
+    <form id="contactForm">
 
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+        <input type="text" id="fname" name="firstname" required placeholder="Your name...">
 
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+        <input type="text" id="lname" name="lastname" required placeholder="Your last name...">
 
         <label for="email">Email Address</label>
-        <input type="text" id="email" name="email" placeholder="Your email address...">
-
-        <label for="momCC">Mom's Credit Card</label>
-        <input type="text" id="momCC" name="momCC" placeholder="Your mom's credit card number...">
+        <input type="email" id="email" name="email" required placeholder="Your email address...">
 
         <label for="country">Country</label>
         <select id="country" name="country">
             <option value="australia">Australia</option>
             <option value="canada">Canada</option>
             <option value="usa">USA</option>
-            <option value="usa">Italy</option>
-            <option value="usa">India</option>
-            <option value="usa">China</option>
-            <option value="usa">Japan</option>
-            <option value="usa">Russia</option>
-            <option value="usa">France</option>
-            <option value="usa">Germany</option>
-            <option value="usa">UK</option>
-            <option value="usa">Norway</option>
-            <option value="usa">Switzerland</option>
+            <option value="italy">Italy</option>
+            <option value="india">India</option>
+            <option value="china">China</option>
+            <option value="japan">Japan</option>
+            <option value="russia">Russia</option>
+            <option value="france">France</option>
+            <option value="germany">Germany</option>
+            <option value="uk">UK</option>
+            <option value="norway">Norway</option>
+            <option value="switzerland">Switzerland</option>
         </select>
 
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
 
-        <input type="submit" value="Submit">
+        <button type="submit">Submit</button>
+
+        <div class="alert">Your Message Has Been Succesfully Sent!</div>
 
     </form>
-    <script type="text/javascript">
-        function validate() {
-            var firstName = document.getElementById('fname').value;
-            var lastName = document.getElementById('lname').value;
-            var emailAddress = document.getElementById('email').value;
-            var country1 = document.getElementById('country').value;
-
-            if(firstName=='' || lastName=='' || emailAddress =='')
-            {
-                alert("This is  required field");
-                return false;
-            }
-
-            if (firstName.length > 30 || lastName.length > 30 || emailAddress.length > 60)
-            {
-                alert("Too long");
-            }
-
-            else return true;
-        }
-    </script>
 </div>
 
 <div class="intro"><h2><a href="../Homepage/index.html">Fab WebPage</a></h2></div>
-</header>
+
+<script src="/__/firebase/init.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.11.0/firebase-app.js"></script>
+<script src="/__/firebase/init.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.11.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="validation.js"></script>
+
+ </header>
 </body>
 </html>
