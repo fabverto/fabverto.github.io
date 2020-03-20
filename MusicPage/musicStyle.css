@@ -76,14 +76,14 @@ ul li b{
 
 
 #main{
-    width: 25%;
-    height: 75%;
+    width: 20%;
+    height: 65%;
     background: linear-gradient(240deg, rgb(201, 207, 59) 30%, rgb(112, 156, 255) 100%);
     border-radius: 30px;
     position: absolute;
     top:30%;
     left: 50%;
-    transform: translate(-75%,-20%);
+    transform: translate(-57%,-17%);
     z-index: 999;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
 }
@@ -106,7 +106,7 @@ ul li b{
     position: absolute;
     top:72%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-100%);
     font-weight: bolder;
 }
 #buttons{
@@ -116,7 +116,7 @@ ul li b{
     position:relative;
     top:10%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -20%);
 }
 #play,#next,#pre{
     width: 60px;
@@ -150,6 +150,7 @@ ul li b{
 #seek-bar{
     position: absolute;
     top: 88%;
+    left: -5%;
     width: 300px;
     height: 10px;
     background-color:gray;
@@ -177,9 +178,19 @@ font-family: monospace;
     font-size: 14px;
     position: absolute;
     top: 93%;
-    left: 29%;
+    left: 26%;
     transform: translate(-50%, -50%);
 
+}
+
+.container h1{
+    position: absolute;
+    font-family: "Bauhaus 93";
+    color: greenyellow;
+    font-weight: bolder;
+    font-size: 70px;
+    top: 7%;
+    left: 40%;
 }
 
 

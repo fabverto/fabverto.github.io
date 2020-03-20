@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="formStyle.css">
+<link rel="stylesheet" href="styleHamburger.css">
+<link rel="stylesheet" href="styleWave.css">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -10,22 +12,35 @@
 <header>
 
     <div class="title">
-        <h1>Contact Me!</h1>
+        <h1>Contact Me</h1>
     </div>
+
 <div class="main">
-    <!--
-    <div class="logo"> <img src="logo.PNG" style="width:300px;height:300px;"> </div>
-    -->
-    <ul>
-        <li><a href="../DataVis/dataVisIndex.html" class = 'one'>Data Vis</a></li>
-        <li><a href="https://vertofabio.wixsite.com/fabs" class= 'inactive'>Photography Portfolio</a></li>
-        <li><a href="../MusicPage/music.html" class= 'inactive'>Music Playlist</a></li>
-        <li><a href="../GamesPage/game.html" class= 'inactive'>Retro Game Hub</a></li>
-        <li><a href="../About/about.html" class = 'inactive'>About</a></li>
-        <li><a href="ContactForm.html" class = 'active'>Contact</a></li>
-    </ul>
+    <div class="container">
+
+
+        <nav class="navbar">
+            <div class="hamburger-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../Homepage/index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../DataVis/index.html" class="nav-link">DataVis</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Styling</a></li>
+                <li class="nav-item"><a href="https://vertofabio.wixsite.com/fabs" class="nav-link">Photos</a></li>
+                <li class="nav-item"><a href="../MusicPage/index.html" class="nav-link">Music</a></li>
+                <li class="nav-item"><a href="../GamesPage/index.html" class="nav-link">Games</a></li>
+                <li class="nav-item"><a href="../About/about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../Contact/ContactForm.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
 <body>
+
+<section><div class="wave" ></div></section>
 <div align="center" class="container">
     <form id="contactForm">
 
@@ -60,26 +75,14 @@
 
         <button type="submit">Submit</button>
 
-        <div class="alert">Your Message Has Been Succesfully Sent!</div>
+
 
     </form>
 </div>
 
-<div class="intro"><h2><a href="../Homepage/index.html">Fab WebPage</a></h2></div>
+<div class="image"><a href="../Homepage/index.html"><img src="../Homepage/bannerImg/logo2.png"/></a></div>
 
-<script src="/__/firebase/init.js"></script>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/7.11.0/firebase-app.js"></script>
-<script src="/__/firebase/init.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/7.11.0/firebase-analytics.js"></script>
-
-<!-- Initialize Firebase -->
-<script src="validation.js"></script>
-
+<script src="burgerScript.js"></script>
  </header>
 </body>
 </html>

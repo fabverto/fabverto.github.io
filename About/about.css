@@ -13,11 +13,10 @@ html {
 }
 
 
-
 .column {
     position: absolute;
     top: 20%;
-    left: 34.5%;
+    left: 36.5%;
     float: left;
     width: 25%;
     margin-bottom: 16px;
@@ -31,27 +30,37 @@ html {
 
 .about-section {
     position: absolute;
-    top: -5%;
-    left: 33.3%;
+    top: 5%;
+    left: 35%;
     padding: 50px;
     text-align: center;
     color: white;
     width: 500px;
 }
 
-.container {
-    padding: 0 16px;
+.container1 {
+    padding: 1px 16px;
+    background-color: #f2f2f2;
+    height: 250px;
 }
 
-.container::after, .row::after {
+.container1::after, .row::after {
     content: "";
     clear: both;
     display: table;
 }
-
-.title {
-    color: white;
+h2{
+    font-size: 30px;
+    margin-left: -2%;
 }
+
+
+.paragraph{
+    position: fixed;
+    top: 67%;
+    left: 37.5%;
+}
+
 
 button {
    /* border: none;
@@ -68,8 +77,9 @@ button {
     font-weight: bolder;
     overflow: hidden;
     */
-    position: relative;
-    left: 25%;
+    position: fixed;
+    top: 75%;
+    left: 44%;
     background: none;
     color: #000000;
     width: 240px;
@@ -139,41 +149,7 @@ button:hover:after {
     }
 }
 
-ul{
-    float: right;
-    list-style-type: none;
-    margin-top: 50px;
-    margin-right: 80px;
-}
 
-li{
-    margin: 20px 0px;
-    }
-
-ul li{
-    /*display: inline-block;*/
-    margin-right: -10px;
-    margin-top: -15px;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0px;
-}
-
-ul li a{
-    text-decoration: none;
-    color: black;
-    font-family: "Century Gothic";
-}
-
-ul li a.active{
-    border-bottom: 3px solid #ffffff;
-    color: white;
-}
-
-ul li a.inactive:hover{
-    background-color: white;
-    color: black;
-}
 
 
 .intro h2 a {
@@ -186,4 +162,10 @@ ul li a.inactive:hover{
     font-weight: 400;
     letter-spacing: -1px;
     text-decoration: none;
+}
+
+.image{
+    position: fixed;
+    top:2%;
+    left:2%;
 }

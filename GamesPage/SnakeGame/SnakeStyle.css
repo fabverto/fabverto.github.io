@@ -76,3 +76,23 @@ ul li a.one:hover{
     left: 40%;
     font-size: 20px;
 }
+
+h1{
+    position: absolute;
+    font-family: "Bauhaus 93";
+    color: greenyellow;
+    font-weight: bolder;
+    font-size: 70px;
+    top: 7%;
+    left: 40%;
+}
+
+.Canvas{
+    position: fixed;
+    left: 35%;
+}
+
+.score{
+    position: fixed;
+    left: 35%;
+}

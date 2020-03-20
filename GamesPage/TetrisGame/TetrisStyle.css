@@ -11,13 +11,12 @@ h1{
 }
 
 canvas{
-    position: absolute;
+    position: fixed;
     padding: 0;
     margin: auto;
-    top: 0;
+    top: 5%;
     bottom: 0;
-    right: 0;
-    left: 0;
+    left: 33%;
     border: 5px solid #ffffff;
 }
 
@@ -80,17 +79,27 @@ header{
 }
 
 .audio{
-    position: absolute;
-    top: 28%;
-    left:25%;
+    position: fixed;
+    top: 77%;
+    left: 33%;
 }
 
 .audioTitle{
-    position: absolute;
-    top: 25%;
-    left:27%;
+    position: fixed;
+    top: 82%;
+    left: 35%;
     font-size: 20px;
     font-weight: bolder;
     color: white;
     text-shadow: #000 0px 0px 5px;
+}
+
+h1{
+    position: absolute;
+    font-family: "Bauhaus 93";
+    color: greenyellow;
+    font-weight: bolder;
+    font-size: 70px;
+    top: 7%;
+    left: 40%;
 }

@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic";
+}
+
+header{
+    background: linear-gradient(135deg, rgb(130, 28, 207) 0%, rgb(83, 250, 126) 100%);
+    height: 100vh;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 50px;
+    margin-right: 80px;
+}
+
+li{
+    margin: 20px 0;
+}
+
+ul li{
+    /*display: inline-block;*/
+    margin-right: -10px;
+    margin-top: -15px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0.5px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li a.active{
+    border-bottom: 3px solid #ffffff;
+    color: white;
+}
+
+ul li a.inactive:hover{
+    background-color: white;
+    color: black;
+}
+
+.title{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+.intro h2 a{
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    font-family: "Bauhaus 93";
+    color: #4afa00;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+
+
+ul li b{
+    /*display: inline-block;*/
+    position: relative;
+    top: -60px;
+    left: -230px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+#main{
+    width: 25%;
+    height: 75%;
+    background: linear-gradient(240deg, rgb(201, 207, 59) 30%, rgb(112, 156, 255) 100%);
+    border-radius: 30px;
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-75%,-20%);
+    z-index: 999;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+}
+#image img{
+    height: 100%;
+    width: 100%;
+    margin-top: -5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#player{
+    padding: 25px;
+    color:#333;
+}
+#songTitle{
+    width:300px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    position: absolute;
+    top:72%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bolder;
+}
+#buttons{
+    height: 50px;
+    width: 100%;
+    margin-top: 50px;
+    position:relative;
+    top:10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#play,#next,#pre{
+    width: 60px;
+    height: 60px;
+    border: 0;
+    background-color: #000000;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#next{
+    width: 40px;
+    height: 40px;
+    left: 70%;
+}
+#pre{
+    width: 40px;
+    height: 40px;
+    left: 30%;
+}
+#play img,#next img,#pre img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#seek-bar{
+    position: absolute;
+    top: 88%;
+    width: 300px;
+    height: 10px;
+    background-color:gray;
+    display: flex;
+    border-radius: 50px;
+    margin-left: 92px;
+    cursor: pointer;
+}
+#fill{
+    height: 10.5px;
+    background-color: #ff4ab4;
+    border-radius: 20px;
+}
+#handle{
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    border-radius: 50%;
+    margin-left: -5px;
+    transform: scale(2);
+}
+
+#currentTime{
+font-family: monospace;
+    font-size: 14px;
+    position: absolute;
+    top: 93%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+

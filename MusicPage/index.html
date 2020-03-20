@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <meta http-equiv="X-U-Compatible" content="ie=edge"/>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700" rel="stylesheet"/>
+    <script src="jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="styleWave.css"/>
+    <link rel="stylesheet" href="musicStyle.css"/>
+    <link rel="stylesheet" href="styleHamburger.css"/>
+    <title>New Game Menu</title>
+</head>
+<body>
+
+<div class="image"><a href="../Homepage/index.html"><img src="bannerImg/logo2.png"/></a></div>
+
+<section><div class="wave" ></div></section>
+<div class="container">
+
+    <h1>Music Page</h1>
+
+    <div id="main">
+        <div id="image">
+            <img src="MusicPoster/MyWayP.jpg"/>
+        </div>
+        <div id="player">
+            <div id="songTitle">Future & Deep House Playlist</div>
+            <div id="buttons">
+                <button id="pre" onclick="pre()"><img src="UIImages/Pre.png" height="90%" width="90%"/></button>
+                <button id="play" onclick="playOrPauseSong()"><img src="UIImages/Play.png"/></button>
+                <button id="next" onclick="next()"><img src="UIImages/Next.png" height="90%" width="90%"/></button>
+            </div>
+
+            <div id="seek-bar">
+                <div id="fill"></div>
+                <div id="handle"></div>
+            </div>
+
+            <div id="currentTime">00:00 / 00:00</div>
+        </div>
+    </div>
+
+
+        <nav class="navbar">
+        <div class="hamburger-menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="../Homepage/index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="../DataVis/index.html" class="nav-link">DataVis</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Styling</a></li>
+            <li class="nav-item"><a href="https://vertofabio.wixsite.com/fabs" class="nav-link">Photos</a></li>
+            <li class="nav-item"><a href="../MusicPage/index.html" class="nav-link">Music</a></li>
+            <li class="nav-item"><a href="../GamesPage/index.html" class="nav-link">Games</a></li>
+            <li class="nav-item"><a href="../About/about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="../Contact/ContactForm.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+</body>
+<script src="burgerScript.js"></script>
+<script type="text/javascript">
+
+    let flag = true;
+    var currentTime = document.getElementById("currentTime");
+    var songs = ["musicFiles/Pascal Junior - My Way.mp3","musicFiles/Pascal Junior - Feelings.mp3","musicFiles/Pascal Junior - No Lies.mp3",
+        "musicFiles/Pascal Junior - Slow Down.mp3", "musicFiles/Pascal Junior - Holdin On.mp3"];
+    var songsTitle = ["Pascal Junior - My Way", "Pascal Junior - Feelings", "Pascal Junior - No Lies", "Pascal Junior - Slow Down", "Pascal Junior - Holdin On"];
+    var poster = ["MusicPoster/MyWayP.jpg","MusicPoster/NoLiesP.jpeg","MusicPoster/NoLiesP.jpeg", "MusicPoster/SlowDownP.jpg", "MusicPoster/HoldinOnP.jpg"];
+
+    var songTitle = document.getElementById("songTitle");
+    var fillBar = document.getElementById("fill");
+
+    var song = new Audio();
+    var currentSong = 0;    // it point to the current song
+
+    //window.onload = playSong;   // it will call the function playSong when window is load
+    //document.getElementById("play").onclick = playOrPauseSong();
+
+    function playSong(){
+
+        song.src = songs[currentSong];  //set the source of 0th song
+
+        songTitle.textContent = songsTitle[currentSong]; // set the title of song
+
+        song.play();    // play the song
+    }
+
+    function playOrPauseSong(){
+        if(flag){
+            $("#play img").attr("src", "UIImages/Pause.png");
+            playSong();
+            flag = false;
+        }
+
+        else {
+
+            if (song.paused) {
+                song.play();
+                $("#play img").attr("src", "UIImages/Pause.png");
+            } else {
+                song.pause();
+                $("#play img").attr("src", "UIImages/Play.png");
+            }
+        }
+
+    }
+
+    song.addEventListener('timeupdate',function(){
+
+        var position = song.currentTime / song.duration;
+
+        fillBar.style.width = position * 100 +'%';
+
+        convertTime(Math.round(song.currentTime));
+    });
+
+
+    function next(){
+
+        currentSong++;
+        if(currentSong > songs.length -1){
+            currentSong = 0;
+        }
+        playSong();
+        $("#play img").attr("src","UIImages/Pause.png");
+        $("#image img").attr("src",poster[currentSong]);
+        //$("#bg img").attr("src",poster[currentSong]);
+    }
+
+    function pre(){
+
+        currentSong--;
+        if(currentSong < 0){
+            currentSong = songs.length-1;
+        }
+        playSong();
+        $("#play img").attr("src","UIImages/Pause.png");
+        $("#image img").attr("src",poster[currentSong]);
+        //$("#bg img").attr("src",poster[currentSong]);
+    }
+
+    function convertTime(seconds) {
+        var min = Math.floor(seconds/60);
+        var sec = seconds % 60;
+
+        min = (min<10) ? "0" + min : min;
+        sec = (sec<10) ? "0" + sec : sec;
+        currentTime.textContent = min + ":" + sec;
+        totalTime(Math.round(song.duration));
+
+    }
+
+    function totalTime(seconds) {
+        var min = Math.floor(seconds/60);
+        var sec = seconds % 60;
+
+        min = (min<10) ? "0" + min : min;
+        sec = (sec<10) ? "0" + sec : sec;
+        currentTime.textContent += "/" + min + ":" + sec;
+    }
+
+</script>
+
+</html>

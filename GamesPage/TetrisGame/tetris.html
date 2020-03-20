@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <title>Tetris</title>
     <link rel="stylesheet" href="TetrisStyle.css">
+    <link rel="stylesheet" href="styleHamburger.css">
 </head>
 <body>
-<header><h1>Tetris!</h1>
-<div class="main">
-    <!--
-    <div class="logo"> <img src="logo.PNG" style="width:300px;height:300px;"> </div>
-    -->
-    <ul>
-        <li><a href="../../DataVis/dataVisIndex.html" class= 'inactive'>Stacked Bar Graph</a></li>
-        <li><a href="https://vertofabio.wixsite.com/fabs" class= 'inactive'>Photography Portfolio</a></li>
-        <li><a href="../../MusicPage/music.html" class= 'inactive'>Music Playlist</a></li>
-        <li><a href="../../GamesPage/game.html" class= 'inactive'>Retro Game Hub</a></li>
-        <li><a href="../../About/about.html" class = 'inactive'>About</a></li>
-        <li><a href="../../Contact/ContactForm.html" class = 'inactive'>Contact</a></li>
-    </ul>
+<header>
+    <div class="container">
+
+
+        <nav class="navbar">
+            <div class="hamburger-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../../Homepage/index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../../DataVis/index.html" class="nav-link">DataVis</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Styling</a></li>
+                <li class="nav-item"><a href="https://vertofabio.wixsite.com/fabs" class="nav-link">Photos</a></li>
+                <li class="nav-item"><a href="../../MusicPage/index.html" class="nav-link">Music</a></li>
+                <li class="nav-item"><a href="../../GamesPage/index.html" class="nav-link">Games</a></li>
+                <li class="nav-item"><a href="../../About/about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../../Contact/ContactForm.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
 
 <div class="audio">
@@ -29,10 +39,13 @@
 
 </div>
 <canvas id="canvas" width="500" height="500"></canvas>
+
+    <div class="image"><a href="../../Homepage/index.html"><img src="../bannerImg/logo2.png"/></a></div>
+    <h1>Tetris</h1>
+
 </header>
 </body>
 
-<div class="intro"><h2><a href="../../Homepage/index.html">Fab WebPage</a></h2></div>
-
 <script type="text/javascript" src="tetris.js"></script>
+<script type="text/javascript" src="burgerScript.js"></script>
 </html>

@@ -5,6 +5,7 @@
     <title>Original Flappy Bird -JavaScript</title>
     <link href="https://fonts.googleapis.com/css?family=Teko:700" rel="stylesheet">
     <link rel="stylesheet" href="flappyStyle.css">
+    <link rel="stylesheet" href="styleHamburger.css">
     <style>
         canvas{
             border: 1px solid #000;
@@ -16,26 +17,35 @@
 <body>
 
 <header>
-    <div class="main">
-        <!--
-        <div class="logo"> <img src="logo.PNG" style="width:300px;height:300px;"> </div>
-        -->
-        <ul>
-            <li><a href="../../DataVis/dataVisIndex.html" class = 'one'>Data Vis</a></li>
-            <li><a href="https://vertofabio.wixsite.com/fabs" class= 'inactive'>Photography Portfolio</a></li>
-            <li><a href="../../MusicPage/music.html" class= 'inactive'>Music Playlist</a></li>
-            <li><a href="../../GamesPage/game.html" class= 'inactive'>Retro Game Hub</a></li>
-            <li><a href="../../About/about.html" class = 'inactive'>About</a></li>
-            <li><a href="../../Contact/ContactForm.html" class = 'inactive'>Contact</a></li>
-        </ul>
+    <div class="container">
+
+
+        <nav class="navbar">
+            <div class="hamburger-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../../Homepage/index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../../DataVis/index.html" class="nav-link">DataVis</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Styling</a></li>
+                <li class="nav-item"><a href="https://vertofabio.wixsite.com/fabs" class="nav-link">Photos</a></li>
+                <li class="nav-item"><a href="../../MusicPage/index.html" class="nav-link">Music</a></li>
+                <li class="nav-item"><a href="../../GamesPage/index.html" class="nav-link">Games</a></li>
+                <li class="nav-item"><a href="../../About/about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../../Contact/ContactForm.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <div class="intro"><h2><a href="../../Homepage/index.html">Fab WebPage</a></h2></div>
-
-    <canvas tabindex='0' id="bird" width="320" height="480"></canvas>
+    <canvas class="canvas" tabindex='0' id="bird" width="320" height="480"></canvas>
 
 </header>
 
+<div class="image"><a href="../../Homepage/index.html"><img src="../bannerImg/logo2.png"/></a></div>
+<h1>Flappy Bird</h1>
+<script src="burgerScript.js"></script>
 <script src="flappy.js"></script>
 </body>
 </html>

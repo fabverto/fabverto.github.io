@@ -74,3 +74,25 @@ ul li a.inactive:hover{
     top: 45%;
     left: 30%;
 }
+
+h1{
+    position: absolute;
+    font-family: "Bauhaus 93";
+    color: greenyellow;
+    font-weight: bolder;
+    font-size: 70px;
+    top: 7%;
+    left: 40%;
+}
+
+.canvas{
+    position: fixed;
+    top:30%;
+    left: 42%;
+}
+
+.image a{
+    position: fixed;
+    top:2%;
+    left:2%;
+}
