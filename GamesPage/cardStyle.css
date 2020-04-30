@@ -408,3 +408,7 @@ body{
     top: 7%;
     left: 40%;
 }
+
+.content p{
+    font-size: 10px;
+}
