@@ -1,0 +1,90 @@
+.background {
+    fill: #eee;
+    pointer-events: all;
+}
+
+path {
+    fill: #868686;
+    stroke: #fff;
+    stroke-width: .5px;
+}
+
+path:hover {
+    /*fill: #210fff;*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3{
+    position: absolute;
+    top: 20%;
+    margin-left: 1%;
+    margin-top: 1%;
+    font-family: Broadway;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    position: absolute;
+    top: 10px;
+    margin-left: 1%;
+    margin-top: 1%;
+    font-family: "Franklin Gothic Heavy";
+    font-size: 40px;
+}
+
+h2{
+    position: absolute;
+    top: 10px;
+    margin-left: 1%;
+    margin-top: 6%;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+svg{
+    background-color: #8ad1ef;
+}
+
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 170px;
+    height: 60px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: #000000;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.text1{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 11px;
+    stroke: black;
+    stroke-width: 0;
+}
+
+.text2{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 14px;
+    stroke: black;
+    stroke-width: 0.3;
+}
+
+text{
+    pointer-events: none;
+}

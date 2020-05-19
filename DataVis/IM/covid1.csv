@@ -1,0 +1,108 @@
+codice_regione,nome_regione,codice_provincia,nome_provincia,sigla_provincia,totale_casi
+13,Abruzzo,69,Chieti,CH,804
+13,Abruzzo,66,L'Aquila,AQ,246
+13,Abruzzo,68,Pescara,PE,1488
+13,Abruzzo,67,Teramo,TE,648
+17,Basilicata,77,Matera,MT,207
+17,Basilicata,76,Potenza,PZ,185
+21,Trentino-Alto Adige,21,Bolzano,BZ,2581
+18,Calabria,79,Catanzaro,CZ,211
+18,Calabria,78,Cosenza,CS,467
+18,Calabria,101,Crotone,KR,118
+18,Calabria,80,Reggio di Calabria,RC,272
+18,Calabria,102,Vibo Valentia,VV,81
+15,Campania,64,Avellino,AV,518
+15,Campania,62,Benevento,BN,196
+15,Campania,61,Caserta,CE,446
+15,Campania,63,Napoli,NA,2571
+15,Campania,65,Salerno,SA,673
+8,Emilia-Romagna,37,Bologna,BO,4880
+8,Emilia-Romagna,38,Ferrara,FE,980
+8,Emilia-Romagna,40,Forl�-Cesena,FC,1700
+8,Emilia-Romagna,36,Modena,MO,3871
+8,Emilia-Romagna,34,Parma,PR,3379
+8,Emilia-Romagna,33,Piacenza,PC,4422
+8,Emilia-Romagna,39,Ravenna,RA,1012
+8,Emilia-Romagna,35,Reggio nell'Emilia,RE,4891
+8,Emilia-Romagna,99,Rimini,RN,2097
+6,Friuli Venezia Giulia,31,Gorizia,GO,203
+6,Friuli Venezia Giulia,93,Pordenone,PN,667
+6,Friuli Venezia Giulia,32,Trieste,TS,1348
+6,Friuli Venezia Giulia,30,Udine,UD,973
+12,Lazio,60,Frosinone,FR,583
+12,Lazio,59,Latina,LT,517
+12,Lazio,57,Rieti,RI,378
+12,Lazio,58,Roma,RM,5436
+12,Lazio,56,Viterbo,VT,421
+7,Liguria,10,Genova,GE,5288
+7,Liguria,8,Imperia,IM,1480
+7,Liguria,11,La Spezia,SP,902
+7,Liguria,9,Savona,SV,1485
+3,Lombardia,16,Bergamo,BG,12443
+3,Lombardia,17,Brescia,BS,14147
+3,Lombardia,13,Como,CO,3629
+3,Lombardia,19,Cremona,CR,6323
+3,Lombardia,97,Lecco,LC,2645
+3,Lombardia,98,Lodi,LO,3351
+3,Lombardia,20,Mantova,MN,3291
+3,Lombardia,15,Milano,MI,22151
+3,Lombardia,108,Monza e della Brianza,MB,5287
+3,Lombardia,18,Pavia,PV,4979
+3,Lombardia,14,Sondrio,SO,1367
+3,Lombardia,12,Varese,VA,3379
+11,Marche,42,Ancona,AN,1859
+11,Marche,44,Ascoli Piceno,AP,290
+11,Marche,109,Fermo,FM,458
+11,Marche,43,Macerata,MC,1103
+11,Marche,41,Pesaro e Urbino,PU,2730
+14,Molise,70,Campobasso,CB,335
+14,Molise,94,Isernia,IS,57
+1,Piemonte,6,Alessandria,AL,3796
+1,Piemonte,5,Asti,AT,1748
+1,Piemonte,96,Biella,BI,1023
+1,Piemonte,4,Cuneo,CN,2688
+1,Piemonte,3,Novara,NO,2574
+1,Piemonte,1,Torino,TO,15025
+1,Piemonte,103,Verbano-Cusio-Ossola,VB,1100
+1,Piemonte,2,Vercelli,VC,1248
+16,Puglia,72,Bari,BA,1435
+16,Puglia,110,Barletta-Andria-Trani,BT,382
+16,Puglia,74,Brindisi,BR,622
+16,Puglia,71,Foggia,FG,1127
+16,Puglia,75,Lecce,LE,508
+16,Puglia,73,Taranto,TA,275
+20,Sardegna,92,Cagliari,CA,248
+20,Sardegna,91,Nuoro,NU,79
+20,Sardegna,95,Oristano,OR,58
+20,Sardegna,90,Sassari,SS,871
+20,Sardegna,111,Sud Sardegna,SU,97
+19,Sicilia,84,Agrigento,AG,141
+19,Sicilia,85,Caltanissetta,CL,170
+19,Sicilia,87,Catania,CT,1061
+19,Sicilia,86,Enna,EN,421
+19,Sicilia,83,Messina,ME,560
+19,Sicilia,82,Palermo,PA,557
+19,Sicilia,88,Ragusa,RG,94
+19,Sicilia,89,Siracusa,SR,245
+19,Sicilia,81,Trapani,TP,139
+9,Toscana,51,Arezzo,AR,671
+9,Toscana,48,Firenze,FI,3403
+9,Toscana,53,Grosseto,GR,422
+9,Toscana,49,Livorno,LI,541
+9,Toscana,46,Lucca,LU,1348
+9,Toscana,45,Massa Carrara,MS,1043
+9,Toscana,50,Pisa,PI,878
+9,Toscana,47,Pistoia,PT,661
+9,Toscana,100,Prato,PO,551
+9,Toscana,52,Siena,SI,430
+22,Trentino-Alto Adige,22,Trento,TN,4338
+10,Umbria,54,Perugia,PG,999
+10,Umbria,55,Terni,TR,370
+2,Valle d'Aosta,7,Aosta,AO,1173
+5,Veneto,25,Belluno,BL,1153
+5,Veneto,28,Padova,PD,3914
+5,Veneto,29,Rovigo,RO,438
+5,Veneto,26,Treviso,TV,2637
+5,Veneto,27,Venezia,VE,2632
+5,Veneto,23,Verona,VR,5006
+5,Veneto,24,Vicenza,VI,2816

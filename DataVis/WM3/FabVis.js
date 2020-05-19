@@ -34,7 +34,7 @@ var nullC = ["AFG", "ATA", "BLZ", "BEN","BMU","BTN","BOL","BIH","BRN","BFA","BDI
   let svg = d3.select("svg")
     .attr('width', width)
     .attr('height', height)
-        .style("background-color","#7d9dd7");
+    .style("background-color","#7d9dd7");
 
 
   var projection = d3.geoMercator().translate([width/2.1, height-(height/3)]).scale(width/11);
@@ -262,6 +262,7 @@ var nullC = ["AFG", "ATA", "BLZ", "BEN","BMU","BTN","BOL","BIH","BRN","BFA","BDI
             }
     }
 
+    console.log(values[0])
     // draw map
     svg.selectAll("path")
       .data(values[0])
