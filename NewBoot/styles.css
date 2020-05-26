@@ -10297,8 +10297,12 @@ header.masthead h1 {
 
 .title-text {
   display: inline-block;
-  font-family: "Baskerville Old Face";
+  font-family: "Baskerville Old Face", cursive;
   font-size: 100px;
+}
+
+.icon{
+  color: yellow;
 }
 
 

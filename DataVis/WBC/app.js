@@ -70,7 +70,7 @@ function setupChart(){
 		  .append('rect')
 		  .attr('class', d => 'button-'+d.class)
 		  .attr('x', (d, i) => {
-			  return (i*200) + 400;})
+			  return (i*200) + 300;})
 		  .attr('y', 50)
 		  .attr('height', 40)
 		  .attr('width', 150)
@@ -91,7 +91,7 @@ function setupChart(){
 		  .enter()
 		  .append('text')
 		  .attr('x', (d, i) => {
-			  return (i*200) + 470;})
+			  return (i*200) + 370;})
 		  .attr('y', 75)
 		  .attr("font-size", '22px')
 		  .style("font-weight", "bold")
@@ -218,11 +218,11 @@ function setupChart(){
 		  if (button.class === "asia") {
 			  svg.selectAll(".node").each(function () {
 				  d3.select(this).style("visibility", "visible")
-			  })
+			  });
 			  //svg.selectAll(".node").filter(".Africa, .Europe, .Oceania, .Americas").remove();
 			  svg.selectAll(".node").filter(".Africa, .Europe, .Oceania, .Americas").each(function () {
 				  d3.select(this).style("visibility", "hidden")
-			  })
+			  });
 
 
 			  // svg.selectAll(".node").filter(".Africa, .Europe, .Oceania, .Americas").style.display = "none";
@@ -240,14 +240,13 @@ function setupChart(){
 		  }
 		  if (button.class === "europe") {
 				  svg.selectAll(".node").each(function () {
-				  	console.log("yo")
 					  d3.select(this).style("visibility", "visible")
-				  })
+				  });
 
 				  //svg.selectAll(".node").filter(".Africa, .Asia, .Oceania, .Americas").remove();
 				  svg.selectAll(".node").filter(".Africa, .Asia, .Oceania, .Americas").each(function () {
 					  d3.select(this).style("visibility", "hidden")
-				  })
+				  });
 
 			//  svg.selectAll(".node").filter(".Africa, .Asia, .Oceania, .Americas").remove();
 		  	/*
@@ -265,11 +264,11 @@ function setupChart(){
 		  if (button.class === "africa") {
 				  svg.selectAll(".node").each(function () {
 					  d3.select(this).style("visibility", "visible")
-				  })
+				  });
 				  //svg.selectAll(".node").filter(".Asia, .Europe, .Oceania, .Americas").remove();
 				  svg.selectAll(".node").filter(".Asia, .Europe, .Oceania, .Americas").each(function () {
-					  d3.select(this).style("visibility", "hidden")
-				  })
+					  d3.select(this).style("visibility", "hidden");
+				  });
 
 			 // svg.selectAll(".node").filter(".Asia, .Europe, .Oceania, .Americas").remove();
 		  	/*
@@ -287,11 +286,11 @@ function setupChart(){
 		  if (button.class === "america") {
 				  svg.selectAll(".node").each(function () {
 					  d3.select(this).style("visibility", "visible")
-				  })
+				  });
 				  //svg.selectAll(".node").filter(".Africa, .Europe, .Oceania, .Asia").remove();
 				  svg.selectAll(".node").filter(".Africa, .Europe, .Oceania, .Asia").each(function () {
 					  d3.select(this).style("visibility", "hidden")
-				  })
+				  });
 
 			 // svg.selectAll(".node").filter(".Africa, .Europe, .Oceania, .Asia").remove();
 		  	/*
@@ -309,11 +308,11 @@ function setupChart(){
 		  if (button.class === "oceania") {
 				  svg.selectAll(".node").each(function () {
 					  d3.select(this).style("visibility", "visible")
-				  })
+				  });
 				  //svg.selectAll(".node").filter(".Africa, .Europe, .Asia, .Americas").remove();
 				  svg.selectAll(".node").filter(".Africa, .Europe, .Asia, .Americas").each(function () {
 					  d3.select(this).style("visibility", "hidden")
-				  })
+				  });
 
 			//  svg.selectAll(".node").filter(".Africa, .Europe, .Asia, .Americas").remove();
 		  	/*
@@ -332,7 +331,7 @@ function setupChart(){
 		  if (button.class === "reset") {
 			  svg.selectAll(".node").each(function () {
 				  d3.select(this).style("visibility", "visible")
-			  })
+			  });
 		  	/*
 			  svg.selectAll(".node circle").style('opacity', (d) => {
 				  return 1;
