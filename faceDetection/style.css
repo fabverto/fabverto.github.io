@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+:root {
+    --btn-color: #fdff7a;
+}
+
+canvas{
+position: absolute;
+}
+
+header{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+}
+
+h2{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+    text-align: center;
+    left: 30%;
+}
+
+.container{
+    width: 720px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    display: inline-block;
+}
+
+.btn{
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+   background-color: var(--btn-color);
+    box-shadow: 0 0 5px var(--btn-color),
+    0 0 25px var(--btn-color),
+    0 0 50px var(--btn-color),
+    0 0 100px var(--btn-color),
+    0 0 200px var(--btn-color),
+    0 0 400px var(--btn-color);
+}
