@@ -17,72 +17,72 @@ const body = selectElement('body');
 const link = selectElement('.nav-list');
 
 // Backgrounds
-const backgroundBlend = selectElement1('.perfect-blend');
-const backgroundRecipes = selectElement1('.tasteful-recipes');
-const backgroundRandom = selectElement1('.random');
-const backgroundRandom1 = selectElement1('.random1');
+const backgroundBanner2 = selectElement1('.banner2');
+const backgroundBanner1 = selectElement1('.banner1');
+const backgroundBanner3 = selectElement1('.banner3');
+const backgroundBanner4 = selectElement1('.banner4');
 
 // Sub-Headline
-const subHeadlinePerfect = selectElement1('.sub-headline-perfect');
-const subHeadlineTasteful = selectElement1('.sub-headline-tasteful');
-const subHeadlineRandom = selectElement1('.sub-headline-random');
-const subHeadlineRandom1 = selectElement1('.sub-headline-random1');
+const subHeadlineBanner2 = selectElement1('.sub-headline-banner2');
+const subHeadlineBanner1 = selectElement1('.sub-headline-banner1');
+const subHeadlineBanner3 = selectElement1('.sub-headline-banner3');
+const subHeadlineBanner4 = selectElement1('.sub-headline-banner4');
 
 // Light Headlines
-const headlineLightTasteful = selectElement1('.headline-light-tasteful');
-const headlineLightPerfect = selectElement1('.headline-light-perfect');
-const headlineLightRandom = selectElement1('.headline-light-random');
-const headlineLightRandom1 = selectElement1('.headline-light-random1');
+const headlineLightBanner1 = selectElement1('.headline-light-banner1');
+const headlineLightBanner2 = selectElement1('.headline-light-banner2');
+const headlineLightBanner3 = selectElement1('.headline-light-banner3');
+const headlineLightBanner4 = selectElement1('.headline-light-banner4');
 
 
 // handling blend hovering
-backgroundBlend.addEventListener('mouseover', function () {
-    subHeadlinePerfect.style.visibility = "hidden";
-    headlineLightPerfect.style.visibility = "hidden";
+backgroundBanner2.addEventListener('mouseover', function () {
+    subHeadlineBanner2.style.visibility = "hidden";
+    headlineLightBanner2.style.visibility = "hidden";
 });
 
-backgroundBlend.addEventListener('mouseout', function () {
-    subHeadlinePerfect.style.visibility = "visible";
-    headlineLightPerfect.style.visibility = "visible";
+backgroundBanner2.addEventListener('mouseout', function () {
+    subHeadlineBanner2.style.visibility = "visible";
+    headlineLightBanner2.style.visibility = "visible";
 });
 // End of blend hovering
 
 
 // handling recipes hovering
-backgroundRecipes.addEventListener('mouseover', function () {
-    subHeadlineTasteful.style.visibility = "hidden";
-    headlineLightTasteful.style.visibility = "hidden";
+backgroundBanner1.addEventListener('mouseover', function () {
+    subHeadlineBanner1.style.visibility = "hidden";
+    headlineLightBanner1.style.visibility = "hidden";
 });
 
-backgroundRecipes.addEventListener('mouseout', function () {
-    subHeadlineTasteful.style.visibility = "visible";
-    headlineLightTasteful.style.visibility = "visible";
+backgroundBanner1.addEventListener('mouseout', function () {
+    subHeadlineBanner1.style.visibility = "visible";
+    headlineLightBanner1.style.visibility = "visible";
 });
 // End recipes hovering
 
 
 // handling random hovering
-backgroundRandom.addEventListener('mouseover', function () {
-    subHeadlineRandom.style.visibility = "hidden";
-    headlineLightRandom.style.visibility = "hidden";
+backgroundBanner3.addEventListener('mouseover', function () {
+    subHeadlineBanner3.style.visibility = "hidden";
+    headlineLightBanner3.style.visibility = "hidden";
 });
 
-backgroundRandom.addEventListener('mouseout', function () {
-    subHeadlineRandom.style.visibility = "visible";
-    headlineLightRandom.style.visibility = "visible";
+backgroundBanner3.addEventListener('mouseout', function () {
+    subHeadlineBanner3.style.visibility = "visible";
+    headlineLightBanner3.style.visibility = "visible";
 });
 // End of random hovering
 
 
 // Handling random1 hovering
-backgroundRandom1.addEventListener('mouseover', function () {
-    subHeadlineRandom1.style.visibility = "hidden";
-    headlineLightRandom1.style.visibility = "hidden";
+backgroundBanner4.addEventListener('mouseover', function () {
+    subHeadlineBanner4.style.visibility = "hidden";
+    headlineLightBanner4.style.visibility = "hidden";
 });
 
-backgroundRandom1.addEventListener('mouseout', function () {
-    subHeadlineRandom1.style.visibility = "visible";
-    headlineLightRandom1.style.visibility = "visible";
+backgroundBanner4.addEventListener('mouseout', function () {
+    subHeadlineBanner4.style.visibility = "visible";
+    headlineLightBanner4.style.visibility = "visible";
 });
 // End of random1 hovering
 

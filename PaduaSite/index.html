@@ -1,13 +1,10 @@
-<!-- Credits to Julio Codes for the tutorial on responsive website with animations -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Site</title>
+    <title>Padua Site</title>
     <!-- Font Awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <!-- Scroll Reveal CDN-->
@@ -15,276 +12,364 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav class="nav">
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                    <i class="fas fa-times"></i>
-                </div>
-                <a href="#" class="logo"><img src="" alt=""></a>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#story" class="nav-link">Outline</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#menu" class="nav-link">History</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#delight" class="nav-link">Sights</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#menu1" class="nav-link">Fun</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!--End of Header-->
+<header>
+    <div class="container">
+        <nav class="nav">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <a href="./index.html" class="logo"><img class="logo" src="./imgs/logo.png" alt=""></a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#outline" class="nav-link">Outline</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#history" class="nav-link">History</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sights" class="nav-link">Sights</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#fun" class="nav-link">Fun</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!--End of Header-->
 
-    <section class="hero" id="hero">
-        <div class="container">
-            <h2 class="sub-headline"><span class="first-letter">W</span>elcome</h2>
-            <h1 class="headline">To Padova</h1>
-            <div class="headline-description">
-                <div class="separator">
-                    <div class="line line-left"></div>
+<section class="hero" id="home">
+    <div class="container">
+        <h2 class="sub-headline"><span class="first-letter">W</span>elcome</h2>
+        <h1 class="headline">To Padova</h1>
+        <div class="headline-description">
+            <div class="separator">
+                <div class="line line-left"></div>
+                <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                <div class="line line-right"></div>
+            </div>
+            <div class="single-animation">
+                <h5>Ready to be visited</h5>
+                <a href="https://www.padovanet.it/cultura-e-turismo" class="btn cta-btn">Explore</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Home End -->
+
+<section class="outline" id="outline">
+    <div class="container">
+        <div class="padua-info">
+            <div class="padua-description padding-right animate-left">
+                <div class="global-headline">
+                    <h2 class="sub-headline"><span class="first-letter">P</span>adova</h2>
+                    <h1 class="headline-light">At a Glance</h1>
                     <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-                    <div class="line line-right"></div>
                 </div>
-                <div class="single-animation">
-                    <h5>Ready to be visited</h5>
-                    <a href="#" class="btn cta-btn">Explore</a>
-                </div>
+                <p>
+                    Welcome to Padova! The city is the capital of the Italian Province of Padua.
+                    It is also the economic and communication hub of the province. It is usually
+                    included in the Padua-Treviso-Venice Metropolitan Area, a region with a population
+                    of about 1.6 million people. The city is picturesque, with a dense network of arcaded
+                    streets opening into large communal piazze, and many bridges crossing the various branches
+                    of the Bacchiglione river, which once surrounded the ancient walls like a moat. Padua is the
+                    setting for most of the action in Shakespeare's The Taming of the Shrew.
+                    The city is also known for being the city where Saint Anthony, a Portuguese Franciscan
+                    spent part of his life and died in 1231.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Padua" class="btn body-btn">Learn More</a>
+            </div>
+            <div class="padua-info-img animate-right">
+                <img src="./imgs/pic8.jpg" alt="">
             </div>
         </div>
-    </section>
-    <!-- Hero End -->
+    </div>
+</section>
+<!-- Outline End -->
 
-    <section class="discover-our-story" id="story">
-        <div class="container">
-            <div class="restaurant-info">
-                <div class="restaurant-description padding-right animate-left">
-                    <div class="global-headline">
-                        <h2 class="sub-headline"><span class="first-letter">P</span>adova</h2>
-                        <h1 class="headline-light">At a Glance</h1>
-                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <a href="#" class="btn body-btn">Link</a>
-                </div>
-                <div class="restaurant-info-img animate-right">
-                    <img src="./imgs/pic8.jpg" alt="">
-                </div>
+<section class="banner1 between" id="banner1">
+    <div class="container">
+        <div class="global-headline">
+            <div class="animate-top">
+                <h2 class="sub-headline-banner1"><span class="first-letter">B</span>eautiful</h2>
+            </div>
+            <div class="animate-bottom">
+                <h1 class="headline-light-banner1">Sceneries</h1>
             </div>
         </div>
-    </section>
-    <!-- Discover End -->
+    </div>
+</section>
+<!-- Banner1 End -->
 
-    <section class="tasteful-recipes between" id="recipes">
-        <div class="container">
-            <div class="global-headline">
-                <div class="animate-top">
-                    <h2 class="sub-headline-tasteful"><span class="first-letter">T</span>asteful</h2>
-                </div>
-                <div class="animate-bottom">
-                    <h1 class="headline-light-tasteful">Recipes</h1>
-                </div>
+<section class="discover-padua" id="history">
+    <div class="container">
+        <div class="padua-info">
+            <div class="image-group padding-right animate-left">
+                <img src="./imgs/rsz_34.jpg" alt="">
+                <img src="./imgs/rsz_211.jpg" alt="">
+                <img src="./imgs/rsz_212.jpg" alt="">
+                <img src="./imgs/rsz_p26.jpg" alt="">
             </div>
-        </div>
-    </section>
-    <!-- Recipes End -->
-
-    <section class="discover-our-menu" id="menu">
-        <div class="container">
-            <div class="restaurant-info">
-                <div class="image-group padding-right animate-left">
-                    <img src="./imgs/rsz_34.jpg" alt="">
-                    <img src="./imgs/rsz_211.jpg" alt="">
-                    <img src="./imgs/rsz_212.jpg" alt="">
-                    <img src="./imgs/rsz_p26.jpg" alt="">
-                </div>
-                    <div class="restaurant-description animate-right">
-                        <div class="global-headline">
-                            <h2 class="sub-headline"><span class="first-letter">D</span>iscover</h2>
-                            <h1 class="headline-light">The History</h1>
-                            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <a href="#" class="btn body-btn">Link</a>
-                    </div>
-                </div>
-            </div>
-    </section>
-<!-- Menu End -->
-
-    <section class="perfect-blend between" id="blend">
-        <div class="container">
-            <div class="global-headline">
-                <div class="animate-top">
-                    <h2 class="sub-headline-perfect"><span class="first-letter">T</span>he perfect</h2>
-                </div>
-                <div class="animate-bottom">
-                    <h1 class="headline-light-perfect">Blend</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Perfect Blend End -->
-
-    <section class="culinary-delight" id="delight">
-        <div class="container">
-            <div class="restaurant-info">
-                <div class="restaurant-description padding-right animate-left">
-                    <div class="global-headline">
-                        <h2 class="sub-headline"><span class="first-letter">D</span>iscover</h2>
-                        <h1 class="headline-light">Sights of Interest</h1>
-                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <a href="#" class="btn body-btn">Link</a>
-                </div>
-                <div class="image-group">
-                    <img class="animate-top" src="./imgs/rsz_5.jpg" alt="">
-                    <img class="animate-bottom" src="./imgs/rsz_13.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Culinary Delite End -->
-
-    <section class="random between" id="random">
-        <div class="container">
-            <div class="global-headline">
-                <div class="animate-top">
-                    <h2 class="sub-headline-random"><span class="first-letter">R</span>andom</h2>
-                </div>
-                <div class="animate-bottom">
-                    <h1 class="headline-light-random">Stuff</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Random End -->
-
-    <section class="discover-our-menu" id="menu1">
-        <div class="container">
-            <div class="restaurant-info">
-                <div class="image-group padding-right animate-left">
-                    <img src="./imgs/rsz_34.jpg" alt="">
-                    <img src="./imgs/rsz_211.jpg" alt="">
-                    <img src="./imgs/rsz_212.jpg" alt="">
-                    <img src="./imgs/rsz_p26.jpg" alt="">
-                </div>
-                <div class="restaurant-description animate-right">
-                    <div class="global-headline">
-                        <h2 class="sub-headline"><span class="first-letter">D</span>iscover</h2>
-                        <h1 class="headline-light">Fun Facts</h1>
-                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <a href="#" class="btn body-btn">Link</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Menu1 End -->
-
-    <section class="random1 between" id="random1">
-        <div class="container">
-            <div class="global-headline">
-                <div class="animate-top">
-                    <h2 class="sub-headline-random1"><span class="first-letter">R</span>andom</h2>
-                </div>
-                <div class="animate-bottom">
-                    <h1 class="headline-light-random1">Stuff</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Random1 End -->
-
-    <footer>
-        <div class="container">
-            <div class="back-to-top">
-                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
-            </div>
-            <div class="footer-content" >
-                <div class="footer-content-about animate-top">
-                    <h4>About Me</h4>
+            <div class="padua-description animate-right">
+                <div class="global-headline">
+                    <h2 class="sub-headline"><span class="first-letter">D</span>iscover</h2>
+                    <h1 class="headline-light">The History</h1>
                     <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
                 </div>
-                <div class="footer-content-divider animate-bottom">
-                    <div class="social-media">
-                        <h4>Follow</h4>
-                        <ul class="social-icons">
-                            <li>
-                                <a href="https://twitter.com/hashtag/padova"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/mattinodipadova/?__tn__=%2Cd%2CP-R&eid=ARDQdhN4uSpuUCQkDy1svW-lQRVnOb8oGFfbs5AgCdiIYnC4HKMjcTtKcIKXGf21BNKUuH2G5Tu6KDao"><i class="fab fa-facebook-square"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-pinterest"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="newsletter-container" id="contact">
-                        <h4>Newsletter</h4>
-                        <form action="" class="newsletter.form">
-                            <input type="text" class="newsletter-input" placeholder="Your Email Address...">
-                            <button class="newsletter-btn" type="submit">
-                                <i class="fas fa-envelope"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
+                <p>
+                    Padua claims to be the oldest city in northern Italy. According to a tradition
+                    dated at least to the time of Virgil's Aeneid and to Livy's Ab Urbe Condita, Padua
+                    was founded in around 1183 BC by the Trojan prince Antenor. After the Fall of Troy,
+                    Antenor led a group of Trojans and their Paphlagonian allies, the Eneti or Veneti,
+                    who lost their king Pylaemenes to settle the Euganean plain in Italy. Thus, when a
+                    large ancient stone sarcophagus was exhumed in the year 1274, officials of the medieval
+                    commune declared the remains within to be those of Antenor.
+                </p>
+                <a href="#" class="btn body-btn">Link</a>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
+<!-- History End -->
+
+<section class="banner2 between" id="banner2">
+    <div class="container">
+        <div class="global-headline">
+            <div class="animate-top">
+                <h2 class="sub-headline-banner2"><span class="first-letter">T</span>he perfect</h2>
+            </div>
+            <div class="animate-bottom">
+                <h1 class="headline-light-banner2">Town</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Perfect Blend End -->
+
+<section class="sights" id="sights">
+    <div class="container">
+        <div class="padua-info">
+            <div class="padua-description padding-right animate-left">
+                <div class="global-headline">
+                    <h2 class="sub-headline"><span class="first-letter">D</span>iscover</h2>
+                    <h1 class="headline-light">The Main Sights</h1>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                </div>
+                <p class="long">
+                    The Scrovegni Chapel (Italian: Cappella degli Scrovegni) is Padua's most notable sight.
+                    It houses a cycle of frescoes completed in 1305 by Giotto. It was commissioned by Enrico
+                    degli Scrovegni, a wealthy banker, as a private chapel once attached to his family's palazzo.
+                    It is also called the "Arena Chapel" because it stands on the site of a Roman-era arena.
+                    The fresco cycle details the life of the Virgin Mary and has been acknowledged by many to be
+                    one of the most important fresco cycles in the world for its role in the development of European
+                    painting. It also includes one of the earliest representations of a kiss in the history of art
+                    (Meeting at the Golden Gate, 1305). Entrance to the chapel is an elaborate ordeal, as it involves
+                    spending 15 minutes prior to entrance in a climate-controlled, airlocked vault, used to stabilize
+                    the temperature between the outside world and the inside of the chapel. This is intended to protect
+                    the frescoes from moisture and mold.
+                    <br>
+                    <br>
+                    The Palazzo della Ragione, with its great hall on the upper floor, is reputed to have the largest roof
+                    unsupported by columns in Europe; the hall is nearly rectangular, its length 81.5 m (267.39 ft), its
+                    breadth 27 m (88.58 ft), and its height 24 m (78.74 ft); the walls are covered with allegorical frescoes;
+                    the building stands upon arches, and the upper storey is surrounded by an open loggia, not unlike that which
+                    surrounds the basilica of Vicenza. The Palazzo was begun in 1172 and finished in 1219. In 1306, Fra Giovanni,
+                    an Augustinian friar, covered the whole with one roof. Originally there were three roofs, spanning the three
+                    chambers into which the hall was at first divided; the internal partition walls remained till the fire of 1420,
+                    when the Venetian architects who undertook the restoration removed them, throwing all three spaces into one and
+                    forming the present great hall, the Salone. The new space was refrescoed by Nicolo' Miretto and Stefano da Ferrara,
+                    working from 1425 to 1440. Beneath the great hall, there is a centuries-old market.
+                    <br>
+                    <br>
+                    The most celebrated of the Paduan churches is the Basilica di Sant'Antonio da Padova, locally known as "Il Santo".
+                    The bones of the saint rest in a chapel richly ornamented with carved marble, the work of various artists, among them
+                    Sansovino and Falconetto. The basilica was begun around the year 1230 and completed in the following century. Tradition
+                    says that the building was designed by Nicola Pisano. It is covered by seven cupolas, two of them pyramidal. There are
+                    also four cloisters. The belltower has eight bells in C.
+                    <br>
+                    <br>
+                    In the Piazza dei Signori is the loggia called the Gran Guardia, (1493–1526), and close by is the Palazzo del Capitaniato,
+                    the residence of the Venetian governors, with its great door, the work of Giovanni Maria Falconetto, the Veronese architect-sculptor
+                    who introduced Renaissance architecture to Padua and who completed the door in 1532. Falconetto was the architect of Alvise Cornaro's
+                    garden loggia, (Loggia Cornaro), the first fully Renaissance building in Padua.[24] Nearby stands the Cathedral, remodelled in 1552 after
+                    a design of Michelangelo. It contains works by Nicolò Semitecolo, Francesco Bassano and Giorgio Schiavone. The nearby Baptistry, consecrated
+                    in 1281, houses the most important frescoes cycle by Giusto de' Menabuoi.
+                    <br>
+                    <br>
+                    One of the best known symbols of Padua is the Prato della Valle, a 90,000 m2 (968,751.94 sq ft) elliptical square. This is one of the biggest
+                    in Europe. In the centre is a wide garden surrounded by an oval canal, lined by 78 statues portraying illustrious citizens. It was created by
+                    Andrea Memmo in the late 18th century. Memmo once resided in the monumental 15th-century Palazzo Angeli, which now houses the Museum of Precinema.
+                    <br>
+                    <br>
+                    Abbey of Santa Giustina and adjacent Basilica. In the 15th century, it became one of the most important monasteries in the area, until it was
+                    suppressed by Napoleon in 1810. In 1919 it was reopened. The tombs of several saints are housed in the interior, including those of Justine,
+                    St. Prosdocimus, St. Maximus, St. Urius, St. Felicita, St. Julianus, as well as relics of the Apostle St. Matthias and the Evangelist St. Luke.
+                    This is home to some art, including the Martyrdom of St. Justine by Paolo Veronese. The complex was founded in the 5th century on the tomb of
+                    the namesake saint, Justine of Padua. The belltower has eight bells in B.
+                </p>
+                <a href="#" class="btn body-btn">Link</a>
+            </div>
+            <div class="image-group">
+                <img class="animate-top" src="./imgs/rsz_5.jpg" alt="">
+                <img class="animate-bottom" src="./imgs/rsz_13.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Sights End -->
+
+<section class="banner3 between" id="banner3">
+    <div class="container">
+        <div class="global-headline">
+            <div class="animate-top">
+                <h2 class="sub-headline-banner3"><span class="first-letter">R</span>andom</h2>
+            </div>
+            <div class="animate-bottom">
+                <h1 class="headline-light-banner3">Stuff</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Random End -->
+
+<section class="discover-padua" id="fun">
+    <div class="container">
+        <div class="padua-info">
+            <div class="image-group padding-right animate-left">
+                <img src="./imgs/rsz_34.jpg" alt="">
+                <img src="./imgs/rsz_211.jpg" alt="">
+                <img src="./imgs/rsz_212.jpg" alt="">
+                <img src="./imgs/rsz_p26.jpg" alt="">
+            </div>
+            <div class="padua-description animate-right">
+                <div class="global-headline">
+                    <h2 class="sub-headline"><span class="first-letter">D</span>iscover</h2>
+                    <h1 class="headline-light">Fun Facts</h1>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                </div>
+                <p class="long">
+                    Padua has long been acclaimed for its university, founded in 1222. Under the rule of Venice the
+                    university was governed by a board of three patricians, called the Riformatori dello Studio di Padova.
+                    The list of notable professors and alumni is long, containing, among others, the names of Bembo, Sperone
+                    Speroni, the anatomist Vesalius, Copernicus, Fallopius, Fabrizio d'Acquapendente, Galileo Galilei,
+                    William Harvey, Pietro Pomponazzi, Reginald, later Cardinal Pole, Scaliger, Tasso and Jan Zamoyski.
+                    It is also where, in 1678, Elena Lucrezia Cornaro Piscopia became the first woman in the world to graduate
+                    from university. The university hosts the oldest anatomy theatre, built in 1594.
+                    <br>
+                    <br>
+                    The university also hosts the oldest botanical garden (1545) in the world. The botanical garden Orto Botanico
+                    di Padova was founded as the garden of curative herbs attached to the University's faculty of medicine. It
+                    still contains an important collection of rare plants.
+                    <br>
+                    <br>
+                    The place of Padua in the history of art is nearly as important as its place in the history of learning.
+                    The presence of the university attracted many distinguished artists, such as Giotto, Fra Filippo Lippi and
+                    Donatello; and for native art there was the school of Francesco Squarcione, whence issued Mantegna.
+                    <br>
+                    <br>
+                    Padua is also the birthplace of the celebrated architect Andrea Palladio, whose 16th-century villas
+                    in the area of Padua, Venice, Vicenza and Treviso are among the most notable of Italy and they were often
+                    copied during the 18th and 19th centuries; and of Giovanni Battista Belzoni, adventurer, engineer and egyptologist.
+                    <br>
+                    <br>
+                    The sculptor Antonio Canova produced his first work in Padua, one of which is among the statues of Prato della
+                    Valle (presently a copy is displayed in the open air, while the original is in the Musei Civici).
+                    <br>
+                    <br>
+                    The Antonianum is settled among Prato della Valle, the Basilica of Saint Anthony and the Botanic Garden.
+                    It was built in 1897 by the Jesuit fathers and kept alive until 2002. During World War II, under the leadership
+                    of P. Messori Roncaglia SJ, it became the center of the resistance movement against the Nazis. Indeed, it
+                    briefly survived P. Messori's death and was sold by the Jesuits in 2004.
+                    <br>
+                    <br>
+                    Padua also plays host to the majority of Taming of the Shrew by William Shakespeare and in Much Ado About
+                    Nothing Benedick is named as "Signior Benedick of Padua".
+                    <br>
+                    <br>
+                    Paolo De Poli, painter and enamellist, author of decorative panels and design objects, 15 times invited
+                    to the Venice Biennale was born in Padua. The electronic musician Tying Tiffany was also born in Padua.
+                </p>
+                <a href="#" class="btn body-btn">Link</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fun End -->
+
+<section class="banner4 between" id="banner4">
+    <div class="container">
+        <div class="global-headline">
+            <div class="animate-top">
+                <h2 class="sub-headline-banner4"><span class="first-letter">R</span>andom</h2>
+            </div>
+            <div class="animate-bottom">
+                <h1 class="headline-light-banner4">Stuff</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Random1 End -->
+
+<footer>
+    <div class="container">
+        <div class="back-to-top">
+            <a href="#home"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <div class="footer-content" >
+            <div class="footer-content-about animate-top">
+                <h4>About Me</h4>
+                <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="footer-content-divider animate-bottom" id="about">
+                <div class="social-media">
+                    <h4>Follow</h4>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://twitter.com/hashtag/padova"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/mattinodipadova/?__tn__=%2Cd%2CP-R&eid=ARDQdhN4uSpuUCQkDy1svW-lQRVnOb8oGFfbs5AgCdiIYnC4HKMjcTtKcIKXGf21BNKUuH2G5Tu6KDao"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--
+                <div class="newsletter-container" id="contact">
+                    <h4>Newsletter</h4>
+                    <form action="" class="newsletter.form">
+                        <input type="text" class="newsletter-input" placeholder="Your Email Address...">
+                        <button class="newsletter-btn" type="submit">
+                            <i class="fas fa-envelope"></i>
+                        </button>
+                    </form>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 <script src="script.js"></script>
