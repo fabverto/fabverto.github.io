@@ -202,7 +202,7 @@ header{
 .hero{
     width: 100%;
     height: 100vh;
-    background: url("./imgs/pic13.jpg") center no-repeat;
+    background: url("../PaduaSite/imgs/pic13.jpg") center no-repeat;
     box-shadow: inset 0 0 0 1000px rgba(56, 56, 56, 0.4);
     background-size: cover;
     display: flex;
@@ -424,7 +424,7 @@ header{
 /* Recipes */
 
 .banner1{
-    background: url("./imgs/p24.jpg") center no-repeat;
+    background: url("../PaduaSite/imgs/banner1.jpg") center no-repeat;
     box-shadow: inset 0 0 0 1000px rgba(56, 56, 56, 0.8);
     background-size: cover;
 }
@@ -455,7 +455,7 @@ header{
 /* Perfect Blend */
 
 .banner2{
-    background: url("./imgs/p17.jpg") center no-repeat;
+    background: url("../PaduaSite/imgs/banner2.jpg") center no-repeat;
     box-shadow: inset 0 0 0 1000px rgba(56, 56, 56, 0.8);
     background-size: cover;
 }
@@ -468,7 +468,7 @@ header{
 
 
 .banner3{
-    background: url("./imgs/p31.jpg") center no-repeat;
+    background: url("../PaduaSite/imgs/banner3.jpg") center no-repeat;
     box-shadow: inset 0 0 0 1000px rgba(56, 56, 56, 0.8);
     background-size: cover;
 }
@@ -480,7 +480,7 @@ header{
 }
 
 .banner4{
-    background: url("./imgs/p29.jpg") center no-repeat;
+    background: url("../PaduaSite/imgs/banner4.jpg") center no-repeat;
     box-shadow: inset 0 0 0 1000px rgba(56, 56, 56, 0.8);
     background-size: cover;
 }
