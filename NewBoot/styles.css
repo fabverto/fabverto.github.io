@@ -10198,7 +10198,7 @@ header.masthead {
   background: linear-gradient(160deg, rgb(25, 84, 123, 0.7) 0%,rgba(255, 216, 155, 0.9) 100%), url("./images/IMG_20190704_231617.jpg");
    */
 
-  background: linear-gradient(160deg, rgba(189, 195, 199, 0.2) 0%, rgba(44, 62, 80, 0.5) 100%), url("./images/fullSize/_MG_2041-IG1.jpg");
+  background: linear-gradient(160deg, rgba(189, 195, 199, 0.2) 0%, rgba(44, 62, 80, 0.5) 100%), url("../NewBoot/images/fullSize/_MG_2041-IG1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
